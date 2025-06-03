@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"/>
-  <script src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
   <header class="header" id="header">
@@ -32,7 +31,10 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
       <div class="hero__video-container">
-        <div class="hero__placeholder" style="background-image: url('assets/hero-placeholder.jpg');"></div>
+        <video autoplay muted loop playsinline class="hero__video">
+          <source src="assets/hero-video.mp4" type="video/mp4">
+          <div class="hero__placeholder" style="background-image: url('assets/hero-bg.jpg');"></div>
+        </video>
         <div class="hero__overlay"></div>
       </div>
       <div class="hero__content">
@@ -92,21 +94,15 @@
           <h2 class="section-title">Join as a Partner</h2>
           <p class="join-partners__intro">Grow your career and expand your service offering through DomusVesta.</p>
           <ul class="benefits-list">
-            <li class="benefits-item">
-              <span class="benefits-icon">✓</span>Access new customers
-            </li>
-            <li class="benefits-item">
-              <span class="benefits-icon">✓</span>Flexible scheduling
-            </li>
-            <li class="benefits-item">
-              <span class="benefits-icon">✓</span>Support & training
-            </li>
+            <li class="benefits-item">✓ Access new customers</li>
+            <li class="benefits-item">✓ Flexible scheduling</li>
+            <li class="benefits-item">✓ Support & training</li>
           </ul>
           <p class="join-partners__cta">Ready to get started?</p>
         </div>
         <div class="join-partners__form">
           <h3 class="join-partners__form-title">Partner Application</h3>
-          <div class="tally-embed" data-tally-open="mVDbmg" data-tally-layout="modal" data-tally-width="100%" data-tally-emoji-text="✍️" data-tally-emoji-animation="heart-beat">Loading…</div>
+          <iframe data-tally-src="https://tally.so/r/mVDbmg?transparentBackground=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Partner Form"></iframe>
         </div>
       </div>
     </section>
@@ -121,13 +117,12 @@
         </div>
         <div class="join-customers__form">
           <h3 class="join-customers__form-title">Customer Sign-Up</h3>
-          <div class="tally-embed" data-tally-open="w2BMGE" data-tally-layout="modal" data-tally-width="100%" data-tally-emoji-text="🛠️" data-tally-emoji-animation="wave">Loading…</div>
+          <iframe data-tally-src="https://tally.so/r/w2BMGE?transparentBackground=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Customer Form"></iframe>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer__content">
       <div class="footer__logo">
@@ -153,10 +148,10 @@
   </footer>
 
   <script>
-    // Tally embed init
-    window.TallyConfig = {
-      autoOpen: false
-    };
+    const iframes = document.querySelectorAll('iframe[data-tally-src]');
+    iframes.forEach(iframe => {
+      iframe.setAttribute('src', iframe.getAttribute('data-tally-src'));
+    });
   </script>
 </body>
 </html>
