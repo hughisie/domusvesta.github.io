@@ -233,13 +233,14 @@ section {
 }
 
 .logo__img {
-    height: 60px; /* Increased by 3x from original 20px */
+    height: 120px;
     width: auto;
     transition: all var(--transition-medium);
+    content: url('../assets/DomusVesta Logo Clear Background.svg');
 }
 
 .header.scrolled .logo__img {
-    height: 50px;
+    height: 100px;
 }
 
 /* Navigation */
@@ -1043,12 +1044,13 @@ section {
 }
 
 .footer__logo-img {
-    height: 60px;
+    height: 120px;
     width: auto;
     margin-bottom: var(--spacing-sm);
     background-color: white;
     border-radius: var(--border-radius-sm);
     padding: 5px;
+    content: url('../assets/DomusVesta Logo Clear Background.svg');
 }
 
 .footer__tagline {
@@ -1112,11 +1114,13 @@ section {
 
 /* Fix for images */
 .about__img, .news-card__img, .footer__logo-img {
-    display: block !important;
-    max-width: 100% !important;
-    height: auto !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    height: 120px;
+    width: auto;
+    margin-bottom: var(--spacing-sm);
+    background-color: white;
+    border-radius: var(--border-radius-sm);
+    padding: 5px;
+    content: url('../assets/DomusVesta Logo Clear Background.svg');
 }
 
 .about__image, .news-card__image {
