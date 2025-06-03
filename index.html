@@ -1,619 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DomusVesta | Empowering Homes. Elevating Skills. Enriching Communities.</title>
-    <meta name="description" content="DomusVesta connects UK households with trustworthy, verified local service professionals via a secure, intuitive platform—while actively supporting skilling, reskilling, and inclusive growth.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DomusVesta</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <script src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a href="#" class="logo">
-                    <img src="assets/images/domusvesta_logo.png" alt="DomusVesta Logo" class="logo__img">
-                </a>
-                <nav class="nav">
-                    <button class="nav__toggle" aria-label="Toggle navigation">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
-                        <li class="nav__item"><a href="#how-it-works" class="nav__link">How It Works</a></li>
-                        <li class="nav__item"><a href="#our-promise" class="nav__link">Our Promise</a></li>
-                        <li class="nav__item"><a href="#join-customers" class="nav__link">For Households</a></li>
-                        <li class="nav__item"><a href="#join-partners" class="nav__link">For Service Partners</a></li>
-                        <li class="nav__item"><a href="#news" class="nav__link">News</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <img src="assets/DomusVesta Logo Clear Background.svg" alt="DomusVesta Logo" class="logo__img"/>
+      </div>
+      <nav>
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#how" class="nav__link">How It Works</a></li>
+          <li><a href="#partners" class="nav__link">Partners</a></li>
+          <li><a href="#customers" class="nav__link">Customers</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main>
     <!-- Hero Section -->
-    <section class="hero parallax-section">
-        <div class="hero__video-container">
-            <!-- Video will replace this when available -->
-            <div class="hero__placeholder" style="background-image: url('assets/hero-bg.jpg');"></div>
-        </div>
+    <section class="hero" id="hero">
+      <div class="hero__video-container">
+        <div class="hero__placeholder" style="background-image: url('assets/hero-placeholder.jpg');"></div>
         <div class="hero__overlay"></div>
-        <div class="container">
-            <div class="hero__content">
-                <h1 class="hero__title">Empowering Homes. Elevating Skills. Enriching Communities.</h1>
-                <p class="hero__subtitle">The UK's people-powered digital marketplace for trusted home services.</p>
-                <div class="hero__buttons">
-                    <a href="#join-customers" class="btn btn--primary">Find a Service Partner</a>
-                    <a href="#join-partners" class="btn btn--secondary">Become a Service Partner</a>
-                </div>
-            </div>
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__title">Welcome to DomusVesta</h1>
+        <p class="hero__subtitle">Trusted services for every home</p>
+        <div class="hero__buttons">
+          <a href="#partners" class="btn btn--primary">Join as a Partner</a>
+          <a href="#customers" class="btn btn--secondary">Join as a Customer</a>
         </div>
-        <div class="hero__scroll-indicator">
-            <span class="hero__scroll-text">Scroll to explore</span>
-            <span class="hero__scroll-arrow"></span>
-        </div>
+      </div>
+      <div class="hero__scroll-indicator">
+        <div class="hero__scroll-text">Scroll Down</div>
+        <div class="hero__scroll-arrow"></div>
+      </div>
     </section>
 
-    <!-- Welcome Section -->
-    <section id="welcome" class="welcome">
-        <div class="container">
-            <div class="welcome__content">
-                <div class="section-header">
-                    <h2 class="section-title">Welcome to DomusVesta</h2>
-                </div>
-                <div class="welcome__text">
-                    <p>Welcome to DomusVesta – the UK's people-powered digital marketplace for trusted home services. Whether you need a mobile doctor, a skilled gardener, a reliable painter, a hairdresser, a yoga instructor, or a legal advisor – we bring care and craft into every home.</p>
-                    <p>At DomusVesta, we're not just building a platform. We're building trust, opportunity, and community. With verified local professionals, secure bookings, and end-to-end support, we make it easy to find quality services with peace of mind.</p>
-                    <p class="welcome__mission">Our mission is simple but powerful: To empower households and professionals alike through smart technology, meaningful human connection, and a shared commitment to excellence.</p>
-                </div>
-            </div>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container about__content">
+        <div>
+          <h2 class="about__heading">About DomusVesta</h2>
+          <p>We connect skilled apprentices and vetted professionals with households in need of reliable services. DomusVesta empowers communities, supports growth, and delivers peace of mind.</p>
         </div>
-    </section>
-
-    <!-- About Us / Market Gap Section -->
-    <section id="about" class="about parallax-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Why DomusVesta?</h2>
-                <p class="section-subtitle">The Market Gap We're Bridging</p>
-            </div>
-            <div class="about__content">
-                <div class="about__text">
-                    <h3 class="about__heading">Every year, thousands of UK households struggle with:</h3>
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <i class="fa-solid fa-xmark about__icon about__icon--negative"></i>
-                            <span>Unverified service providers and fake reviews</span>
-                        </li>
-                        <li class="about__item">
-                            <i class="fa-solid fa-xmark about__icon about__icon--negative"></i>
-                            <span>No-shows, unclear pricing, and no support when things go wrong</span>
-                        </li>
-                        <li class="about__item">
-                            <i class="fa-solid fa-xmark about__icon about__icon--negative"></i>
-                            <span>A lack of access to skilled professionals across essential trades and wellbeing services</span>
-                        </li>
-                    </ul>
-                    
-                    <h3 class="about__heading">Meanwhile, thousands of skilled professionals and small businesses face:</h3>
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <i class="fa-solid fa-xmark about__icon about__icon--negative"></i>
-                            <span>Inconsistent income and platform fees that punish growth</span>
-                        </li>
-                        <li class="about__item">
-                            <i class="fa-solid fa-xmark about__icon about__icon--negative"></i>
-                            <span>Lack of visibility or trust signals to win new clients</span>
-                        </li>
-                        <li class="about__item">
-                            <i class="fa-solid fa-xmark about__icon about__icon--negative"></i>
-                            <span>No structured way to build careers, upskill, or train the next generation</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="about__solution">
-                        <h3 class="about__heading">DomusVesta exists to fix that.</h3>
-                        <p>We combine technology and heart to offer a safer, smarter, and more human way to connect. A platform where professionals are valued, independent traders are supported, and customers are protected.</p>
-                        <p>We're here to level the playing field for independent service providers and connect communities through meaningful, quality-first work.</p>
-                    </div>
-                </div>
-                <div class="about__image">
-                    <img src="assets/about-image.jpg" alt="Service professional helping a customer" class="about__img">
-                </div>
-            </div>
+        <div class="about__image">
+          <img src="assets/about-image.jpg" alt="About Us" class="about__img"/>
         </div>
+      </div>
     </section>
 
     <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">How DomusVesta Works</h2>
-                <p class="section-subtitle">Simple, transparent, and effective</p>
-            </div>
-            
-            <div class="tabs">
-                <div class="tabs__header">
-                    <button class="tabs__btn tabs__btn--active" data-tab="customers">For Customers</button>
-                    <button class="tabs__btn" data-tab="professionals">For Service Partners</button>
-                    <button class="tabs__btn" data-tab="communities">For Communities</button>
-                </div>
-                
-                <div class="tabs__content">
-                    <div class="tabs__panel tabs__panel--active" id="customers-panel">
-                        <div class="steps">
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Book trusted professionals in minutes</h3>
-                                    <p class="step__desc">Find and book verified local service partners quickly and easily.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-certificate"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">See verified reviews and credentials</h3>
-                                    <p class="step__desc">View DBS checks, certifications, insurance, and authentic customer reviews.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-lock"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Pay securely via escrow</h3>
-                                    <p class="step__desc">Your payment is only released once you're completely satisfied with the service.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-headset"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Enjoy end-to-end support</h3>
-                                    <p class="step__desc">Get help via WhatsApp, chat, and phone throughout your service journey.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-shield-halved"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">DomusVesta Guarantee</h3>
-                                    <p class="step__desc">Every service is backed by our commitment to safety, quality, and transparency.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tabs__panel" id="professionals-panel">
-                        <div class="steps">
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-user-plus"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Get discovered by local clients</h3>
-                                    <p class="step__desc">Connect with customers who value quality and are looking for your services.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-id-card"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Showcase your credentials</h3>
-                                    <p class="step__desc">Display your qualifications, ratings, and availability to potential clients.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Earn more as you grow</h3>
-                                    <p class="step__desc">Benefit from lower commission rates as your business expands on our platform.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-graduation-cap"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Receive support and upskilling</h3>
-                                    <p class="step__desc">Access training opportunities and connect with a trusted network of professionals.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-handshake"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Join a purpose-led platform</h3>
-                                    <p class="step__desc">Be part of a community that supports microbusinesses, trainees, and tradespeople.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tabs__panel" id="communities-panel">
-                        <div class="steps">
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-people-group"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Discover local talent</h3>
-                                    <p class="step__desc">Find, hire, and champion skilled professionals in your community.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-hand-holding-heart"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Create meaningful economic impact</h3>
-                                    <p class="step__desc">Support your neighbors and strengthen your local economy.</p>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <div class="step__icon">
-                                    <i class="fa-solid fa-seedling"></i>
-                                </div>
-                                <div class="step__content">
-                                    <h3 class="step__title">Support professional growth</h3>
-                                    <p class="step__desc">Help new professionals rise through training, mentorship, and your direct support.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="how-it-works" id="how">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="tabs">
+          <div class="tabs__header">
+            <button class="tabs__btn tabs__btn--active">Step 1</button>
+            <button class="tabs__btn">Step 2</button>
+            <button class="tabs__btn">Step 3</button>
+          </div>
+          <div class="tabs__panel tabs__panel--active">
+            <p>Register as a customer or partner with a simple form.</p>
+          </div>
+          <div class="tabs__panel">
+            <p>We match you with the right people based on your needs and skills.</p>
+          </div>
+          <div class="tabs__panel">
+            <p>Start delivering or receiving quality services with confidence.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Our Promise Section -->
-    <section id="our-promise" class="our-promise parallax-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Promise</h2>
-                <p class="section-subtitle">Trust, Skill, Community & Social Impact</p>
-            </div>
-            <div class="our-promise__intro">
-                <p>At DomusVesta, we don't just facilitate bookings. We build a better future for work, wellbeing, and community resilience.</p>
-            </div>
-            <div class="our-promise__pillars">
-                <div class="pillar">
-                    <div class="pillar__icon">
-                        <i class="fa-solid fa-shield-check"></i>
-                    </div>
-                    <h3 class="pillar__title">Verified Trust</h3>
-                    <p class="pillar__desc">Every provider is identity-checked, insured, and vetted. You book with confidence.</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar__icon">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="pillar__title">Skills Activation</h3>
-                    <p class="pillar__desc">We partner with colleges and apprenticeship programmes to train and support the next generation of tradespeople.</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar__icon">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <h3 class="pillar__title">Inclusive Growth</h3>
-                    <p class="pillar__desc">We uplift local microbusinesses, reskill displaced workers, and ensure our services are accessible to all.</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar__icon">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h3 class="pillar__title">Community Connection</h3>
-                    <p class="pillar__desc">We give small traders visibility and tools to grow, and we support local champions and training hubs that make every town stronger.</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar__icon">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                    </div>
-                    <h3 class="pillar__title">Human Touch</h3>
-                    <p class="pillar__desc">We combine digital ease with real support: local champions, live care teams, and a platform designed around people.</p>
-                </div>
-            </div>
-            <div class="our-promise__conclusion">
-                <p>DomusVesta isn't just a marketplace. It's a movement to rehumanise the way we work, connect, and care.</p>
-            </div>
+    <!-- Join as Partner -->
+    <section class="join-partners" id="partners">
+      <div class="container join-partners__content">
+        <div>
+          <h2 class="section-title">Join as a Partner</h2>
+          <p class="join-partners__intro">Grow your career and expand your service offering through DomusVesta.</p>
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <span class="benefits-icon">✓</span>Access new customers
+            </li>
+            <li class="benefits-item">
+              <span class="benefits-icon">✓</span>Flexible scheduling
+            </li>
+            <li class="benefits-item">
+              <span class="benefits-icon">✓</span>Support & training
+            </li>
+          </ul>
+          <p class="join-partners__cta">Ready to get started?</p>
         </div>
+        <div class="join-partners__form">
+          <h3 class="join-partners__form-title">Partner Application</h3>
+          <div class="tally-embed" data-tally-open="mVDbmg" data-tally-layout="modal" data-tally-width="100%" data-tally-emoji-text="✍️" data-tally-emoji-animation="heart-beat">Loading…</div>
+        </div>
+      </div>
     </section>
 
-    <!-- Join the Movement - For Service Partners -->
-    <section id="join-partners" class="join-partners">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Join the Movement</h2>
-                <p class="section-subtitle">For Service Partners</p>
-            </div>
-            <div class="join-partners__content">
-                <div class="join-partners__text">
-                    <p class="join-partners__intro">Whether you're just starting out or already have loyal clients, DomusVesta helps you thrive.</p>
-                    <ul class="benefits-list">
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Build trust with verified profiles and quality-first listings</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Access introductory training, branding tools, and exposure in your area</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Benefit from fair commissions, loyalty rewards, and mentorship recognition</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Get featured in your region and enjoy consistent job flow</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Contribute to shaping the future of skilled local service work</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Feel supported – as a solo trader, a small team, or a business with community roots</span>
-                        </li>
-                    </ul>
-                    <p class="join-partners__cta">Start with zero fees. Build your future, your way.</p>
-                </div>
-                <div class="join-partners__form">
-                    <h3 class="join-partners__form-title">Register Your Interest</h3>
-                    <div class="tally-embed" data-tally-form="partner-signup">
-                        <!-- Tally.so form will be embedded here -->
-                        <p class="form-placeholder">Loading form...</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Join as Customer -->
+    <section class="join-customers" id="customers">
+      <div class="container join-customers__content">
+        <div>
+          <h2 class="section-title">Join as a Customer</h2>
+          <p class="join-customers__intro">Looking for a reliable service provider? We’ve got you covered.</p>
+          <p class="join-customers__welcome">Welcome to the new standard of home service.</p>
         </div>
+        <div class="join-customers__form">
+          <h3 class="join-customers__form-title">Customer Sign-Up</h3>
+          <div class="tally-embed" data-tally-open="w2BMGE" data-tally-layout="modal" data-tally-width="100%" data-tally-emoji-text="🛠️" data-tally-emoji-animation="wave">Loading…</div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Join the Movement - For Households -->
-    <section id="join-customers" class="join-customers parallax-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Join the Movement</h2>
-                <p class="section-subtitle">For Households</p>
-            </div>
-            <div class="join-customers__content">
-                <div class="join-customers__form">
-                    <h3 class="join-customers__form-title">Pre-register for Early Access</h3>
-                    <div class="tally-embed" data-tally-form="customer-signup">
-                        <!-- Tally.so form will be embedded here -->
-                        <p class="form-placeholder">Loading form...</p>
-                    </div>
-                </div>
-                <div class="join-customers__text">
-                    <p class="join-customers__intro">We believe every home deserves trusted, quality care. With DomusVesta, you can:</p>
-                    <ul class="benefits-list">
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Find skilled, verified professionals across a wide range of trades and services</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>See honest reviews, credentials, and pricing before you book</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Enjoy reliable service backed by our platform guarantee</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Support your local community and access up-and-coming talent</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Help someone build their business while caring for your home</span>
-                        </li>
-                        <li class="benefits-item">
-                            <i class="fa-solid fa-check benefits-icon"></i>
-                            <span>Feel secure, connected, and confident in every booking</span>
-                        </li>
-                    </ul>
-                    <p class="join-customers__conclusion">This is home services, reimagined for the modern world – with community, compassion, and quality at its core.</p>
-                    <p class="join-customers__welcome">Welcome to DomusVesta – where people come first.</p>
-                </div>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__logo">
+        <img src="assets/DomusVesta Logo Clear Background.svg" alt="DomusVesta Logo" class="footer__logo-img"/>
+        <p class="footer__tagline">Empowering homes and professionals together.</p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <h4 class="footer__title">Explore</h4>
+          <ul class="footer__list">
+            <li><a href="#about" class="footer__link">About Us</a></li>
+            <li><a href="#how" class="footer__link">How It Works</a></li>
+            <li><a href="#partners" class="footer__link">Partners</a></li>
+            <li><a href="#customers" class="footer__link">Customers</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2025 DomusVesta. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- News Section -->
-    <section id="news" class="news">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Latest News</h2>
-                <p class="section-subtitle">Updates from DomusVesta</p>
-            </div>
-            <div class="news__grid">
-                <article class="news-card">
-                    <div class="news-card__image">
-                        <img src="assets/news-1.jpg" alt="DomusVesta Launch" class="news-card__img">
-                    </div>
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__date">May 15, 2025</span>
-                            <span class="news-card__category">Announcement</span>
-                        </div>
-                        <h3 class="news-card__title">DomusVesta Announces Pre-launch Phase</h3>
-                        <p class="news-card__excerpt">We're excited to announce the pre-launch phase of DomusVesta, connecting UK households with trusted service professionals.</p>
-                        <a href="#" class="news-card__link">Read More</a>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="news-card__image">
-                        <img src="assets/news-2.jpg" alt="Partnership Announcement" class="news-card__img">
-                    </div>
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__date">May 10, 2025</span>
-                            <span class="news-card__category">Partnerships</span>
-                        </div>
-                        <h3 class="news-card__title">New Training Partnerships Announced</h3>
-                        <p class="news-card__excerpt">DomusVesta partners with leading colleges to support skills development in high-demand trades.</p>
-                        <a href="#" class="news-card__link">Read More</a>
-                    </div>
-                </article>
-                <article class="news-card">
-                    <div class="news-card__image">
-                        <img src="assets/news-3.jpg" alt="Market Research" class="news-card__img">
-                    </div>
-                    <div class="news-card__content">
-                        <div class="news-card__meta">
-                            <span class="news-card__date">May 5, 2025</span>
-                            <span class="news-card__category">Research</span>
-                        </div>
-                        <h3 class="news-card__title">UK Home Services Market Research</h3>
-                        <p class="news-card__excerpt">Our latest research reveals growing demand for verified, transparent home services across the UK.</p>
-                        <a href="#" class="news-card__link">Read More</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-subtitle">Get in touch with our team</p>
-            </div>
-            <div class="contact__content">
-                <div class="contact__info">
-                    <div class="contact__item">
-                        <div class="contact__icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="contact__text">
-                            <h3 class="contact__title">Email</h3>
-                            <p class="contact__value">info@domusvesta.co</p>
-                        </div>
-                    </div>
-                    <div class="contact__item">
-                        <div class="contact__icon">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="contact__text">
-                            <h3 class="contact__title">Phone</h3>
-                            <p class="contact__value">+44 (0) 123 456 7890</p>
-                        </div>
-                    </div>
-                    <div class="contact__item">
-                        <div class="contact__icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="contact__text">
-                            <h3 class="contact__title">Location</h3>
-                            <p class="contact__value">London, United Kingdom</p>
-                        </div>
-                    </div>
-                    <div class="social">
-                        <h3 class="social__title">Follow Us</h3>
-                        <div class="social__links">
-                            <a href="#" class="social__link" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social__link" aria-label="Facebook">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="social__link" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="social__link" aria-label="Twitter">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact__form">
-                    <form class="form">
-                        <div class="form__group">
-                            <label for="name" class="form__label">Name</label>
-                            <input type="text" id="name" class="form__input" placeholder="Your name">
-                        </div>
-                        <div class="form__group">
-                            <label for="email" class="form__label">Email</label>
-                            <input type="email" id="email" class="form__input" placeholder="Your email">
-                        </div>
-                        <div class="form__group">
-                            <label for="message" class="form__label">Message</label>
-                            <textarea id="message" class="form__textarea" placeholder="Your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn--primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__logo">
-                    <img src="assets/images/domusvesta_logo.png" alt="DomusVesta Logo" class="footer__logo-img">
-                    <p class="footer__tagline">Empowering Homes. Elevating Skills. Enriching Communities.</p>
-                </div>
-                <div class="footer__links">
-                    <div class="footer__column">
-                        <h3 class="footer__title">Navigation</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="#about" class="footer__link">About Us</a></li>
-                            <li class="footer__item"><a href="#how-it-works" class="footer__link">How It Works</a></li>
-                            <li class="footer__item"><a href="#our-promise" class="footer__link">Our Promise</a></li>
-                            <li class="footer__item"><a href="#join-customers" class="footer__link">For Households</a></li>
-                            <li class="footer__item"><a href="#join-partners" class="footer__link">For Service Partners</a></li>
-                            <li class="footer__item"><a href="#news" class="footer__link">News</a></li>
-                            <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__column">
-                        <h3 class="footer__title">Legal</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Terms of Service</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Cookie Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2025 DomusVesta. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+  <script>
+    // Tally embed init
+    window.TallyConfig = {
+      autoOpen: false
+    };
+  </script>
 </body>
 </html>
